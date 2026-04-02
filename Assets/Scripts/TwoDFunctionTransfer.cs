@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class TwoDFunctionTransfer : MonoBehaviour
 {
     public string inputEquation;
-    public GameObject inputField;
+    public InputField inputField;
 
     public void StoreEquation()
     {
-        inputEquation = inputField.GetComponent<Text>().text;
+        inputEquation = inputField.text;
         TwoDGlobalVariables.equation = inputEquation;
     }
 }
