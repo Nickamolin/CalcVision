@@ -28,7 +28,7 @@ public class DrawGraph : MonoBehaviour
         org.mariuszgromada.math.mxparser.Argument y = new org.mariuszgromada.math.mxparser.Argument("y");
         org.mariuszgromada.math.mxparser.Argument z = new org.mariuszgromada.math.mxparser.Argument("z");
 
-        string localEq = GlobalVariables.equation;
+        string localEq = GlobalVariables.equation.ToLower();
 
         org.mariuszgromada.math.mxparser.Expression rel = new org.mariuszgromada.math.mxparser.Expression(localEq, x, y, z);
 

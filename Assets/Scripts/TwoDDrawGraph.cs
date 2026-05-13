@@ -27,7 +27,7 @@ public class TwoDDrawGraph : MonoBehaviour
         org.mariuszgromada.math.mxparser.Argument x = new org.mariuszgromada.math.mxparser.Argument("x");
         org.mariuszgromada.math.mxparser.Argument y = new org.mariuszgromada.math.mxparser.Argument("y");
 
-        string localEq = TwoDGlobalVariables.equation;
+        string localEq = TwoDGlobalVariables.equation.ToLower();
 
         org.mariuszgromada.math.mxparser.Expression rel = new org.mariuszgromada.math.mxparser.Expression(localEq, x, y);
 
